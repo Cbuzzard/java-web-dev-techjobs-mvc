@@ -15,7 +15,7 @@ import static org.launchcode.javawebdevtechjobsmvc.controllers.ListController.co
  */
 @Controller
 @RequestMapping("search")
-public class SearchController {
+public class SearchController extends TechJobsController{
 
     @RequestMapping(value = "")
     public String search(Model model) {
@@ -27,6 +27,7 @@ public class SearchController {
     @PostMapping("/results")
     String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm) {
         model.addAttribute("columns", columnChoices);
+        model.addAttribute("prevSearchType", searchType);
         if(searchType.equals("All") || searchTerm.equals("All")) {
             model.addAttribute("jobs", JobData.findByValue(searchTerm));
         } else {
