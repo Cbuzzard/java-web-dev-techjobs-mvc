@@ -1,12 +1,12 @@
-package org.launchcode.javawebdevtechjobsmvc.controllers;
+package org.launchcode.javawebdevtechjobsmvc.controllers.a3;
 
-import org.launchcode.javawebdevtechjobsmvc.models.Job;
+import org.launchcode.javawebdevtechjobsmvc.models.a3.Job;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import org.launchcode.javawebdevtechjobsmvc.models.JobData;
+import org.launchcode.javawebdevtechjobsmvc.models.a3.JobData;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ import java.util.HashMap;
  * Created by LaunchCode
  */
 @Controller
-@RequestMapping(value = "list")
+@RequestMapping("a3/list")
 public class ListController extends TechJobsController {
 
 
@@ -37,7 +37,7 @@ public class ListController extends TechJobsController {
         model.addAttribute("positions", JobData.getAllPositionTypes());
         model.addAttribute("skills", JobData.getAllCoreCompetency());
 
-        return "list";
+        return "a3/list";
     }
 
     @RequestMapping(value = "jobs")
@@ -52,6 +52,6 @@ public class ListController extends TechJobsController {
         }
         model.addAttribute("jobs", jobs);
 
-        return "list-jobs";
+        return "a3/list-jobs";
     }
 }

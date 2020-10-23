@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head">
+<head th:replace="a3/fragments :: head">
 </head>
 <body>
 
-<div th:replace="fragments :: page-header"></div>
+<div th:replace="a3/fragments :: page-header"></div>
 
 <div class="container body-content">
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-    <form th:action="@{/search/results}" method = "post">
+    <form th:action="@{/a3/search/results}" method = "post">
         <h2>Search by:</h2>
 
         <p>

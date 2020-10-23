@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsmvc.controllers;
+package org.launchcode.javawebdevtechjobsmvc.controllers.a3;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,6 +10,7 @@ import java.util.HashMap;
  * Created by LaunchCode
  */
 @Controller
+@RequestMapping("a3")
 public class HomeController extends TechJobsController{
 
     @RequestMapping(value = "")
@@ -21,7 +22,7 @@ public class HomeController extends TechJobsController{
 
         model.addAttribute("actions", actionChoices);
 
-        return "index";
+        return "a3/index.html";
     }
 
 }

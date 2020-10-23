@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsmvc;
+package org.launchcode.javawebdevtechjobsmvc.models.a3;
 
 
 import java.util.Comparator;

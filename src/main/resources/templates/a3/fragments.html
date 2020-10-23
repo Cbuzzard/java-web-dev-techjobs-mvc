@@ -16,11 +16,11 @@
     <div th:fragment="page-header" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a th:href="@{/}" class="navbar-brand">TechJobs</a>
+                <a th:href="@{'/a3'}" class="navbar-brand">TechJobs</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <div th:each="action : ${actions}"><li><a th:href="${action.key}" th:text="${action.value}"></a></li></div>
+                    <div th:each="action : ${actions}"><li><a th:href="'/a3/'+${action.key}" th:text="${action.value}"></a></li></div>
                 </ul>
             </div>
         </div>

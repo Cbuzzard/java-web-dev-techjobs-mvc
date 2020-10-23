@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsmvc.models;
+package org.launchcode.javawebdevtechjobsmvc.models.a3;
 
 import java.util.Objects;
 

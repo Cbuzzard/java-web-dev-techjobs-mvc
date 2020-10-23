@@ -1,4 +1,4 @@
-package org.launchcode.javawebdevtechjobsmvc.controllers;
+package org.launchcode.javawebdevtechjobsmvc.controllers.a3;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
 

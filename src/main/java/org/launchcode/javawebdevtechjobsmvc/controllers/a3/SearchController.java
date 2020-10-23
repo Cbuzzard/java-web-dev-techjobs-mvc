@@ -1,26 +1,21 @@
-package org.launchcode.javawebdevtechjobsmvc.controllers;
+package org.launchcode.javawebdevtechjobsmvc.controllers.a3;
 
-import org.launchcode.javawebdevtechjobsmvc.models.Job;
-import org.launchcode.javawebdevtechjobsmvc.models.JobData;
+import org.launchcode.javawebdevtechjobsmvc.models.a3.JobData;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-
-import static org.launchcode.javawebdevtechjobsmvc.controllers.ListController.columnChoices;
 
 /**
  * Created by LaunchCode
  */
 @Controller
-@RequestMapping("search")
+@RequestMapping("a3/search")
 public class SearchController extends TechJobsController{
 
     @RequestMapping(value = "")
     public String search(Model model) {
         model.addAttribute("columns", columnChoices);
-        return "search";
+        return "a3/search";
     }
 
     // TODO #3 - Create a handler to process a search request and render the updated search view.
@@ -33,7 +28,7 @@ public class SearchController extends TechJobsController{
         } else {
             model.addAttribute("jobs", JobData.findByColumnAndValue(searchType, searchTerm));
         }
-        return "search";
+        return "a3/search";
     }
 
 }

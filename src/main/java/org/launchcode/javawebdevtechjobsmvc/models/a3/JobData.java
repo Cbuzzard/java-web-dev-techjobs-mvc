@@ -1,9 +1,8 @@
-package org.launchcode.javawebdevtechjobsmvc.models;
+package org.launchcode.javawebdevtechjobsmvc.models.a3;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
-import org.launchcode.javawebdevtechjobsmvc.NameSorter;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
